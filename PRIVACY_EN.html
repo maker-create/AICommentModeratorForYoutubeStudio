@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — AI Comment Moderator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1a1a1a;
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+    .meta {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    h2 {
+      color: #1a1a1a;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+    h3 {
+      color: #444;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .highlight {
+      background: #fffacd;
+      padding: 20px;
+      border-left: 4px solid #ffd700;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .section-box {
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+      border-left: 3px solid #0066cc;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <strong>AI Comment Moderator for YouTube Studio</strong><br>
+      Last Updated: June 25, 2026 · Version <span class="version">1.1</span>
+    </div>
+
+    <h2>Overview</h2>
+    <p>AI Comment Moderator is a Chrome extension that helps moderate YouTube Studio comments based on AI-powered criteria. This privacy policy explains what data is collected, how it is used, and your rights.</p>
+
+    <h2>1. Data This Extension Collects</h2>
+
+    <div class="section-box">
+      <h3>Comment Text</h3>
+      <p><strong>What:</strong> The text content of YouTube comments from pages you visit while using this extension.</p>
+      <p><strong>Why:</strong> To evaluate comments according to your moderation criteria using external AI providers.</p>
+      <p><strong style="color: #d9534f;">❌ Important:</strong> This extension does <strong>NOT</strong> store comment text and has no server of its own. The text is sent to the AI provider you choose (Groq or Pollinations) for the sole purpose of classifying it. Once the text leaves your browser, how that provider handles or retains it is governed by <strong>that provider's own privacy policy</strong>, which we do not control and cannot guarantee. Please review their policies (linked below) before using the extension.</p>
+      <p><strong>Cached decisions:</strong> Only moderation decisions (not the original text) are saved locally on your device using <code>chrome.storage.local</code> (~10 MB max). The text is never copied or saved.</p>
+    </div>
+
+    <div class="section-box">
+      <h3>User Preferences & Settings</h3>
+      <p><strong>What:</strong> Your chosen AI provider, API keys (encrypted), moderation criteria, language preference, and other settings.</p>
+      <p><strong>Why:</strong> To configure the extension according to your preferences.</p>
+      <p><strong>Duration:</strong> Until you uninstall the extension or manually delete the data.</p>
+      <p><strong>Storage:</strong> Locally on your device only. API keys are encrypted before storage.</p>
+    </div>
+
+    <div class="section-box">
+      <h3>Analytics Events</h3>
+      <p><strong>What:</strong> Anonymous event counts (e.g., "API key added") sent to an analytics service. <strong style="color: #d9534f;">The API key is NOT sent</strong> — only the count of how many times someone saves a key is tracked.</p>
+      <p><strong>Why:</strong> To understand how the extension is used and improve it.</p>
+      <p><strong>What is NOT included:</strong> User identifiers, IP addresses, browsing history, personal data, account information, or API keys.</p>
+      <p><strong>Cookies:</strong> None. Analytics requests are sent without cookies — the analytics service does not set or store any cookies through this extension.</p>
+      <p><strong>Learn more:</strong> See <a href="https://umami.is/privacy" target="_blank">umami.is/privacy</a></p>
+    </div>
+
+    <div class="highlight">
+      <h3 style="margin-top: 0;">❌ Data This Extension Does NOT Collect</h3>
+      <ul style="margin-bottom: 0;">
+        <li>Your YouTube account information or credentials</li>
+        <li>Your browsing history or IP address</li>
+        <li>Personal identification data</li>
+        <li>Cross-site tracking data</li>
+      </ul>
+    </div>
+
+    <h2>2. Third-Party Services</h2>
+    <p>This extension sends comment text to the following AI providers for classification:</p>
+    <ul>
+      <li><strong>Groq</strong> — <a href="https://groq.com/privacy" target="_blank">groq.com/privacy</a></li>
+      <li><strong>Pollinations AI</strong> — <a href="https://pollinations.ai/privacy" target="_blank">pollinations.ai/privacy</a></li>
+      <li><strong>Umami</strong> (for anonymous analytics) — <a href="https://umami.is/privacy" target="_blank">umami.is/privacy</a></li>
+    </ul>
+    <p>By using this extension, you accept that comment content will be sent to these services for processing. Each has its own privacy policy — review them if you have concerns.</p>
+
+    <h2>3. Data Security</h2>
+    <ul>
+      <li><strong>Encryption:</strong> API keys are encrypted with AES-256-GCM before storage.</li>
+      <li><strong>Local storage:</strong> All settings and cached decisions remain on your device.</li>
+      <li><strong>No own server:</strong> This extension does not operate its own server or store data in the cloud (except anonymous analytics events sent to the analytics service).</li>
+    </ul>
+
+    <h2>4. Your Rights</h2>
+    <ul>
+      <li><strong>Local data:</strong> All data stays on your own device — no remote copy is held that you would need to request access to.</li>
+      <li><strong>Delete:</strong> You can clear cached decisions at any time by clicking "🗑 Reset memory" in the Settings tab.</li>
+      <li><strong>Uninstall:</strong> Uninstalling the extension from Chrome removes all stored data.</li>
+      <li><strong>Opt-out of analytics:</strong> This extension currently does not provide a toggle for analytics. If you object, you may uninstall the extension.</li>
+    </ul>
+
+    <h2>5. Changes to This Policy</h2>
+    <p>This policy may be updated as the extension evolves. Changes will be reflected in the version number above. Major changes will require your re-acceptance via the onboarding screen.</p>
+
+    <footer>
+      <p><strong>Language:</strong> This policy is written in English. In case of any discrepancy between this English version and the Spanish version, the Spanish version takes precedence.</p>
+      <p><strong>Last Updated:</strong> June 25, 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
