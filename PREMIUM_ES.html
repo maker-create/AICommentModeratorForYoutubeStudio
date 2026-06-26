@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Comment Moderator — Premium</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #202124;
+      background: #ffffff;
+      padding: 20px;
+      line-height: 1.5;
+    }
+    .wrap { max-width: 560px; margin: 0 auto; }
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      background: linear-gradient(135deg, #ffb300 0%, #e8710a 100%);
+      color: #fff;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 6px rgba(232, 113, 10, .35);
+    }
+    h1 { margin: 14px 0 6px; font-size: 21px; font-weight: 800; line-height: 1.25; }
+    .sub { margin: 0 0 18px; font-size: 14px; color: #5f6368; font-weight: 500; }
+    ul { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+    li { display: flex; align-items: flex-start; gap: 11px; }
+    .check {
+      flex: 0 0 auto;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: #fff4e5; color: #e8710a;
+      font-size: 13px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 1px;
+    }
+    .feat strong { font-weight: 700; }
+    .rules { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .rule {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 5px 10px;
+      background: #f8f9fa; border: 1px solid #e6e6e6; border-radius: 8px;
+      font-size: 12px;
+    }
+    .rule b { font-weight: 600; color: #3c4043; }
+    .arrow { color: #9aa0a6; font-weight: 700; }
+    .act { padding: 2px 9px; border-radius: 10px; font-size: 11px; font-weight: 700; color: #fff; }
+    .hide { background: #ea4335; }
+    .show { background: #34a853; }
+    .feature { background: #e8710a; }
+    .footer {
+      margin-top: 22px; padding-top: 16px;
+      border-top: 1px solid #eee;
+      font-size: 12.5px; color: #9aa0a6; font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">Premium</span>
+    <h1>Próximamente en Premium</h1>
+    <p class="sub">Próximamente en Premium podrás hacer esto:</p>
+
+    <ul>
+      <li>
+        <span class="check">✓</span>
+        <span class="feat"><strong>Sin límite de comentarios</strong> — solo tendrás el límite de uso de tu propio proveedor de IA gratuito.</span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span class="feat"><strong>Configurar el prompt que quieras</strong> para decidir exactamente qué se modera.</span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <div>
+          <span class="feat"><strong>Clasificar, ocultar y destacar</strong> comentarios según tus propias categorías personalizables — por ejemplo:</span>
+          <div class="rules">
+            <span class="rule"><b>Insultos</b><span class="arrow">→</span><span class="act hide">Ocultar</span></span>
+            <span class="rule"><b>Preguntas</b><span class="arrow">→</span><span class="act show">Mostrar</span></span>
+            <span class="rule"><b>Colaboración / marcas</b><span class="arrow">→</span><span class="act feature">Destacar</span></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <p class="footer">Permanece atento — estas funciones están en camino.</p>
+  </div>
+</body>
+</html>
